@@ -210,7 +210,7 @@ public class HapticPlugin : MonoBehaviour  {
 
 		touchableObjects =  GameObject.FindGameObjectsWithTag("Touchable") as GameObject[];  //FIXME  Does this fail gracefully?
 
-		hapticErrorQueue = new Queue ();
+        hapticErrorQueue = new Queue ();
 
 	}
     void Start()
@@ -651,8 +651,8 @@ public class HapticPlugin : MonoBehaviour  {
 		if (isIncorrectVersion)	return;
 
 		touchableObjects = GameObject.FindGameObjectsWithTag("Touchable") as GameObject[];
-
-		for (int ii = 0; ii < touchableObjects.Length; ii++)
+        
+        for (int ii = 0; ii < touchableObjects.Length; ii++)
 		{
 			int shapeID = touchableObjects [ii].GetInstanceID();
 			string name = touchableObjects [ii].name;
@@ -694,8 +694,8 @@ public class HapticPlugin : MonoBehaviour  {
 		if (isIncorrectVersion)	return;
 
 		GameObject[] myObjects = GameObject.FindGameObjectsWithTag("Touchable") as GameObject[];
-
-		for (int ii = 0; ii < myObjects.Length; ii++)
+        
+        for (int ii = 0; ii < myObjects.Length; ii++)
 		{
 			int shapeID = myObjects [ii].GetInstanceID();
 

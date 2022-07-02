@@ -18,6 +18,14 @@ public class SwapProbe : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKey("[0]"))
+        {
+            probe1.SetActive(false);
+            probe2.SetActive(false);
+            probe3.SetActive(false);
+        }
+
         if (Input.GetKey("[1]"))
         {
             probe1.SetActive(true);
