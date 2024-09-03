@@ -1,0 +1,1 @@
+Unity repository for the Rubber Hand Illusion demo presented in Berlin's Long Night of the Sciences in June 2021. The application uses Vive Trackers to co-locate physical and virtual objects and Leap Motion trackers to display participants' hands.
